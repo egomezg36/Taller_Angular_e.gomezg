@@ -3,18 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CourseModule } from './course/course.module';
-import { SeriesComponent } from './series/series.component';
+import { SeriesModule } from './series/series.module';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
-      SeriesComponent
+
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    CourseModule
+    SeriesModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

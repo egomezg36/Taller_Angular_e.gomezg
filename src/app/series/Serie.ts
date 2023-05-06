@@ -1,4 +1,5 @@
 export class Serie {
+
   id: number;
   name: string;
   channel: string;
@@ -25,28 +26,5 @@ export class Serie {
     this.poster = poster;
   }
 
-  static fromJson(json: any): Serie {
-    return new Serie(
-      json.id,
-      json.name,
-      json.channel,
-      json.seasons,
-      json.description,
-      json.webpage,
-      json.poster
-    );
-  }
 
-  toJson(): any {
-    return {
-      id: this.id,
-      name: this.name,
-      channel: this.channel,
-      seasons: this.seasons,
-      description: this.description,
-      webpage: this.webpage,
-      poster: this.poster
-    };
-  }
 }
-

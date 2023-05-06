@@ -1,0 +1,9 @@
+
+
+.card-img-top {
+object-fit: cover;
+height: 300px; /* adjust this value to your desired height */
+}
+.card-text {
+  color: blue;
+}
